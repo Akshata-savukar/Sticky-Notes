@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+#notes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    background-image: url(img1.jpg);
+    width: 50%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left input {
+    background-color: transparent;
+    height: 35px;
+    width: 55px;
+    border: none;
+}
+.styling{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.styling  .btn-color{
+    display: flex;
+    align-items: center;
+}
+.left .shade {
+    display: flex;
+    flex-direction: column;
+}
+
+.left,
+.right {
+    width: 50%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.left textarea,
+.left .styling {
+    margin-bottom: 1rem;
+}
+
+.left textarea {
+    box-shadow: 2px 2px 3px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    width: 450px;
+    height: 300px;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.left button {
+    width: max-content;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.right {
+    background-image: url(OIP.jpg);
+    width: 50%;
+    height: 50;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.right {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.right .note {
+    border-radius: 5px;
+    position: relative;
+    padding: 5px;
+    box-shadow: 2px 2px 3px 4px rgba(0, 0, 0, 0.3);
+    max-width: 150px;
+    margin: 10px;
+}
+
+.right .note .close {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    border-radius: 0.rem;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(162, 15, 162, 0.41);
+    border: none;
+    
+}
+@media screen and (max-width:950px) {
+   #notes{
+    flex-direction: column;
+   }
+   .left , .right{
+    width: 100%;
+   } 
+}
+@media screen and (max-width:550px) {
+   .left textarea {
+width: 300px;
+height: 250px;
+   }
+}
